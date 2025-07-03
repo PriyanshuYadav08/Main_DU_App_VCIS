@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:background="@color/white">
+    android:background="@color/white"
+    tools:context=".MainActivity">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
@@ -16,41 +15,317 @@
         android:background="@color/DU_purple"
         android:title="Delhi University"
         android:titleTextColor="@color/white"
-        app:popupTheme="@style/PopupMenuStyle"
-        app:titleTextAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent"
+        app:popupTheme="@style/PopupMenuStyle"
+        app:titleTextAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Title" />
+
+    <ImageView
+        android:id="@+id/watermark"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:alpha="0.35"
+        android:contentDescription="watermark"
+        android:scaleType="centerInside"
+        android:src="@drawable/watermark_du"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ScrollView
         android:id="@+id/scrollView"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent">
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:paddingTop="10dp"
-            android:background="@color/DU_purple"
-            android:gravity="center_horizontal">
-            <ImageView
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:src="@drawable/watermark_du"
-                android:contentDescription="du_logo"
-                android:layout_marginBottom="5dp"/>
+            android:gravity="center"
+            android:orientation="vertical">
 
-            <ImageView
-                android:layout_width="202dp"
-                android:layout_height="80dp"
-                android:src="@drawable/du_logo_name_only"
-                android:contentDescription="du_name"/>
+<!--HEADER SECTION-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/DU_purple"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:paddingTop="10dp">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginBottom="5dp"
+                    android:contentDescription="du_logo"
+                    android:src="@drawable/watermark_du" />
+
+                <ImageView
+                    android:layout_width="202dp"
+                    android:layout_height="80dp"
+                    android:layout_marginBottom="15dp"
+                    android:contentDescription="du_name"
+                    android:src="@drawable/du_logo_name_only" />
+            </LinearLayout>
+
+<!--ABOUT DU SECTION-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:fontFamily="@font/pjs_bold"
+                android:text="About DU"
+                android:textAlignment="center"
+                android:textColor="@color/DU_purple"
+                android:textSize="22sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:fontFamily="@font/pjs_semi_bold"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:text="Established in 1922, the University of Delhi (DU) is India's premier public central university renowned for academic excellence, diverse disciplines, and vibrant campus life. It comprises over 90 affiliated colleges, offering undergraduate, postgraduate, and doctoral programs in arts, science, commerce, law, and more. DU fosters innovation, research, and inclusivity, attracting students and faculty from across India and abroad. With a rich legacy and modern outlook, it remains a leading center for higher education."
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+<!--VC MESSAGE SECTION-->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:elevation="10dp"
+                app:cardCornerRadius="20sp"
+                app:strokeColor="@color/grayDark"
+                app:strokeWidth="2dp"
+                android:backgroundTint="@color/white">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="15dp"
+                    android:textAlignment="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:fontFamily="@font/pjs_bold"
+                        android:text="Vice Chancellor's Message"
+                        android:textColor="@color/DU_purple"
+                        android:textSize="22sp" />
+
+                    <ImageView
+                        android:layout_width="220dp"
+                        android:layout_height="220dp"
+                        android:layout_marginBottom="10dp"
+                        android:src="@drawable/vc_img" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/pjs_semi_bold"
+                        android:gravity="center"
+                        android:text="As we step into the centenary year of the University of Delhi, I feel immense pride in the legacy we have built over the past 100 years.\n \nOur university has grown into a beacon of academic excellence, diversity and transformation. We have continually embraced change—whether through curricular reforms, the introduction of the Choice Based Credit System or adopting the National Education Policy 2020—to ensure our students receive holistic and globally relevant education.\n \nDespite the unprecedented challenges posed by the pandemic, I am deeply inspired by the resilience and adaptability shown by our students, faculty and staff. Together, we have continued to learn, research and serve the community.\n \nAs Vice-Chancellor, I look forward to leading DU into a new century of innovation, inclusion and academic leadership on the global stage."
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:layout_marginBottom="5dp"/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+<!--VISION MISSION GOAL SECTION-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/pjs_bold"
+                android:text="DU's Vision, Mission and Goal"
+                android:textColor="@color/DU_purple"
+                android:textSize="22sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/pjs_bold"
+                android:textColor="@color/DU_purple"
+                android:text="Vision"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:layout_marginBottom="5dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:fontFamily="@font/pjs_semi_bold"
+                android:text="To be an internationally acclaimed university, recognised for excellence in teaching, research, and outreach; dedicated to serving humanity through the creation of knowledgeable, skilled, enterprising and socially responsible citizens"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/pjs_bold"
+                android:textColor="@color/DU_purple"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:text="Mission"
+                android:layout_marginBottom="5dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/pjs_semi_bold"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:gravity="center"
+                android:text="To impart high-quality education and research experience to students to nurture their talent, promote their intellectual growth, shape their professional and personal development, thereby enabling them to achieve their full potential"
+                android:layout_marginBottom="10dp"/>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                app:strokeWidth="2dp"
+                app:cardCornerRadius="15dp"
+                app:strokeColor="@color/grayDark"
+                android:backgroundTint="@color/white"
+                android:layout_marginBottom="25dp">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/pjs_bold"
+                        android:textColor="@color/DU_purple"
+                        android:gravity="center"
+                        android:textSize="16sp"
+                        android:text="Core Values"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/pjs_semi_bold"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:paddingStart="15dp"
+                        android:paddingEnd="15dp"
+                        android:paddingBottom="15dp"
+                        android:gravity="center"
+                        android:text="Excellence - in teaching, research, and innovation \n \n
+        Honesty and Integrity - in personal conduct, academic endeavours, and institutional practices \n \n
+        Compassion - by exhibiting empathy towards multi-species existence and planetary responsibilities \n \n
+        Diversity and Inclusion - by recognising and respecting human diversity leading to inclusivity \n \n
+        Universality - by practicing the idea of ‘वसुधैव कुटुम्बकम्’ Vasudhaiv Kutumbkam ‘the world is one family’ \n \n
+        Transformation - of self, society, Nation and the world \n \n
+        Happiness - in quest of contentment and ways of spreading the idea of 'सर्वे भवन्तु सुखिनः' Sarve Bhavantu Sukhinah ‘May all be happy’" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+<!--DEPT SECTION-->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:elevation="10dp"
+                app:cardCornerRadius="20sp"
+                app:strokeColor="@color/grayDark"
+                app:strokeWidth="2dp"
+                android:backgroundTint="@color/white">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="15dp"
+                    android:textAlignment="center">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:fontFamily="@font/pjs_bold"
+                        android:text="Explore Different Departments"
+                        android:textColor="@color/DU_purple"
+                        android:textSize="22sp" />
+                    <Button
+                        android:id="@+id/fot_dept_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:backgroundTint="@color/DU_purple"
+                        android:text="Faculty of Technology"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+                    <Button
+                        android:id="@+id/fms_dept_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:backgroundTint="@color/DU_purple"
+                        android:text="Faculty of Management Studies"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+                    <Button
+                        android:id="@+id/law_dept_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:backgroundTint="@color/DU_purple"
+                        android:text="Faculty of Law"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+                    <Button
+                        android:id="@+id/edu_dept_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:backgroundTint="@color/DU_purple"
+                        android:text="Faculty of Education"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+                    <Button
+                        android:id="@+id/fos_dept_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/DU_purple"
+                        android:text="Faculty of Science"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+                    <Button
+                        android:id="@+id/other_dept_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:backgroundTint="@color/DU_purple"
+                        android:text="Other Faculties"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+<!---->
+
         </LinearLayout>
     </ScrollView>
-
 </androidx.constraintlayout.widget.ConstraintLayout>

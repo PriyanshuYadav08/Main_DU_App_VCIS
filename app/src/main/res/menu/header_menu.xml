@@ -39,4 +39,7 @@
     <item
         android:id="@+id/option13"
         android:title="Alumni Network Access"/>
+    <item
+        android:id="@+id/option14"
+        android:title="Contact Us"/>
 </menu>

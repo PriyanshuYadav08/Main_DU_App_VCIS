@@ -23,7 +23,7 @@ class MainActivity : AppCompatActivity() {
             if (view is TextView && view.text == toolbar.title) {
                 val typeface = ResourcesCompat.getFont(this, R.font.pjs_bold)
                 view.typeface = typeface
-                view.textSize = 15f
+                view.textSize = 18f
                 view.setTextColor(resources.getColor(R.color.white))
                 break
             }
@@ -87,6 +87,10 @@ class MainActivity : AppCompatActivity() {
             }
             R.id.option13 -> {
                 Toast.makeText(this, "Alumni Network Access clicked", Toast.LENGTH_SHORT).show()
+                true
+            }
+            R.id.option14 -> {
+                Toast.makeText(this, "Contact Us clicked", Toast.LENGTH_SHORT).show()
                 true
             }
             else -> super.onOptionsItemSelected(item)
