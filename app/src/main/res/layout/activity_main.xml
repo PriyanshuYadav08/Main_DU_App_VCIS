@@ -11,12 +11,12 @@
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="35dp"
         android:background="@color/DU_purple"
         android:title="Delhi University"
-        android:titleTextColor="@color/black"
-        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:titleTextColor="@color/white"
+        app:popupTheme="@style/PopupMenuStyle"
         app:titleTextAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -36,14 +36,14 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:paddingTop="10dp"
+            android:background="@color/DU_purple"
             android:gravity="center_horizontal">
             <ImageView
                 android:layout_width="80dp"
                 android:layout_height="80dp"
-                android:background="@color/white"
                 android:src="@drawable/watermark_du"
                 android:contentDescription="du_logo"
-                android:layout_marginBottom="10dp"/>
+                android:layout_marginBottom="5dp"/>
 
             <ImageView
                 android:layout_width="202dp"
