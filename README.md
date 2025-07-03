@@ -1,1 +1,3 @@
-Create README.md
+Starting dev from now on...
+
+This is the main DU app hopefully..😭😭😭
