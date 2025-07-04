@@ -1,5 +1,6 @@
 package com.example.mainduappvcis
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
@@ -39,44 +40,56 @@ class MainActivity : AppCompatActivity() {
         return when (item.itemId) {
             R.id.option1 -> {
                 Toast.makeText(this, "Student Dashboard clicked", Toast.LENGTH_SHORT).show()
+                val intent = Intent(this, StudentDashboardActivity::class.java)
+                startActivity(intent)
                 true
             }
-            R.id.option2 -> {
-                Toast.makeText(this, "Academic Calenders and Timetables clicked", Toast.LENGTH_SHORT).show()
-                true
-            }
-            R.id.option3 -> {
-                Toast.makeText(this, "Assignment and Exam Submissions clicked", Toast.LENGTH_SHORT).show()
-                true
-            }
+//            R.id.option2 -> {
+//                Toast.makeText(this, "Academic Calenders and Timetables clicked", Toast.LENGTH_SHORT).show()
+//                true
+//            }
+//            R.id.option3 -> {
+//                Toast.makeText(this, "Assignment and Exam Submissions clicked", Toast.LENGTH_SHORT).show()
+//                true
+//            }
             R.id.option4 -> {
                 Toast.makeText(this, "University Announcements clicked", Toast.LENGTH_SHORT).show()
+                val intent = Intent(this, UniversityAnnouncementsActivity::class.java)
+                startActivity(intent)
                 true
             }
-            R.id.option5 -> {
-                Toast.makeText(this, "Digital Certificates and ID Cards clicked", Toast.LENGTH_SHORT).show()
-                true
-            }
+//            R.id.option5 -> {
+//                Toast.makeText(this, "Digital Certificates and ID Cards clicked", Toast.LENGTH_SHORT).show()
+//                true
+//            }
             R.id.option6 -> {
                 Toast.makeText(this, "Result and Grade Tracker clicked", Toast.LENGTH_SHORT).show()
+                val intent = Intent(this, ResultGradeActivity::class.java)
+                startActivity(intent)
                 true
             }
             R.id.option7 -> {
-                Toast.makeText(this, "Feedback and Grivence Portal clicked", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Feedback and Grievance Portal clicked", Toast.LENGTH_SHORT).show()
+                val intent = Intent(this, FeedbackGrievanceActivity::class.java)
+                startActivity(intent)
                 true
             }
             R.id.option8 -> {
                 Toast.makeText(this, "Career and Internship Portal clicked", Toast.LENGTH_SHORT).show()
+                val intent = Intent(this, CareerInternshipActivity::class.java)
+                startActivity(intent)
                 true
             }
             R.id.option9 -> {
                 Toast.makeText(this, "Event Registrations and Passes clicked", Toast.LENGTH_SHORT).show()
+                val intent = Intent(this, EventPassesActivity::class.java)
+                startActivity(intent)
                 true
             }
-            R.id.option10 -> {
-                Toast.makeText(this, "Faculty Directory and Messaging clicked", Toast.LENGTH_SHORT).show()
-                true
-            }
+//            R.id.option10 -> {
+//                Toast.makeText(this, "Faculty Directory and Messaging clicked", Toast.LENGTH_SHORT).show()
+//                true
+//            }
             R.id.option11 -> {
                 Toast.makeText(this, "Scholarship and Financial Aid Info clicked", Toast.LENGTH_SHORT).show()
                 true

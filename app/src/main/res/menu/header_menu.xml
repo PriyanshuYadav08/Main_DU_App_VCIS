@@ -3,33 +3,33 @@
     <item
         android:id="@+id/option1"
         android:title="Student Dashboard"/>
-    <item
-        android:id="@+id/option2"
-        android:title="Academic Calenders and Timetables" />
-    <item
-        android:id="@+id/option3"
-        android:title="Assignment and Exam Submissions" />
+<!--    <item-->
+<!--        android:id="@+id/option2"-->
+<!--        android:title="Academic Calenders and Timetables" />-->
+<!--    <item-->
+<!--        android:id="@+id/option3"-->
+<!--        android:title="Assignment and Exam Submissions" />-->
     <item
         android:id="@+id/option4"
         android:title="University Announcements" />
-    <item
-        android:id="@+id/option5"
-        android:title="Digital Certificates and ID Cards" />
+<!--    <item-->
+<!--        android:id="@+id/option5"-->
+<!--        android:title="Digital Certificates and ID Cards" />-->
     <item
         android:id="@+id/option6"
         android:title="Result and Grade Tracker" />
     <item
         android:id="@+id/option7"
-        android:title="Feedback and Grivence Portal"/>
+        android:title="Feedback and Grievance Portal"/>
     <item
         android:id="@+id/option8"
         android:title="Career and Internship Portal"/>
     <item
         android:id="@+id/option9"
         android:title="Event Registrations and Passes"/>
-    <item
-        android:id="@+id/option10"
-        android:title="Faculty Directory and Messaging"/>
+<!--    <item-->
+<!--        android:id="@+id/option10"-->
+<!--        android:title="Faculty Directory and Messaging"/>-->
     <item
         android:id="@+id/option11"
         android:title="Scholarship and Financial Aid Info"/>
