@@ -15,6 +15,18 @@
         android:theme="@style/Theme.MainDUAppVCIS"
         tools:targetApi="31">
         <activity
+            android:name=".ContactUsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AlumniNetworkActivity"
+            android:exported="false" />
+        <activity
+            android:name=".InternationalCellActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ScholarshipFinancialAidActivity"
+            android:exported="false" />
+        <activity
             android:name=".EventPassesActivity"
             android:exported="false" />
         <activity

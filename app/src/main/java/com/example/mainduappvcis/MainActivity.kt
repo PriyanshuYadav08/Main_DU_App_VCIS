@@ -92,18 +92,26 @@ class MainActivity : AppCompatActivity() {
 //            }
             R.id.option11 -> {
                 Toast.makeText(this, "Scholarship and Financial Aid Info clicked", Toast.LENGTH_SHORT).show()
+                val intent = Intent(this, ScholarshipFinancialAidActivity::class.java)
+                startActivity(intent)
                 true
             }
             R.id.option12 -> {
                 Toast.makeText(this, "International Cell and Exchange Info clicked", Toast.LENGTH_SHORT).show()
+                val intent = Intent(this, InternationalCellActivity::class.java)
+                startActivity(intent)
                 true
             }
             R.id.option13 -> {
                 Toast.makeText(this, "Alumni Network Access clicked", Toast.LENGTH_SHORT).show()
+                val intent = Intent(this, AlumniNetworkActivity::class.java)
+                startActivity(intent)
                 true
             }
             R.id.option14 -> {
                 Toast.makeText(this, "Contact Us clicked", Toast.LENGTH_SHORT).show()
+                val intent = Intent(this, ContactUsActivity::class.java)
+                startActivity(intent)
                 true
             }
             else -> super.onOptionsItemSelected(item)
