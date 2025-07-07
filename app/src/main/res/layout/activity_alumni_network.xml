@@ -7,15 +7,166 @@
     android:layout_height="match_parent"
     tools:context=".AlumniNetworkActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@color/DU_purple"
+        android:gravity="center_vertical"
         app:layout_constraintEnd_toEndOf="parent"
-        android:gravity="center"
-        android:textColor="@color/black"
-        android:text="This is the alumni network activity.\n \nThis comes after clicking the alumni network option in the header menu."/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:fontFamily="@font/pjs_bold"
+            android:text="University Of Delhi"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/watermark"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:alpha="0.35"
+        android:contentDescription="watermark"
+        android:scaleType="centerInside"
+        android:src="@drawable/watermark_du"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:fontFamily="@font/pjs_bold"
+                android:text="ALUMNI NETWORK"
+                android:textAlignment="center"
+                android:textColor="@color/DU_purple"
+                android:textSize="22sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:fontFamily="@font/pjs_semi_bold"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:text="University of Delhi is proud to have an illustrious list of alumni who have distinguished themselves in various spheres. The university recognizes that it’s alumni   form   a critical component in its progression, development, and future direction.\n \nThe Alumni Affairs Office is headed by Dean, Alumni Affairs who is advised by a duly constituted Core Advisory Committee consisting of faculty representatives from various Departments and Colleges. The day-to-day functioning is managed by the staff.\n \nIt is a pleasure to inform you that our university marks the historic occasion of the centenary year in 2022. We look forward for a meaningful  and inclusive alumni engagement  that is beneficial to our institution, its current students, and the wider community. We invite you to join the Delhi University Alumni Association (DUAA). Please feel free to get in touch with us."
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:elevation="10dp"
+                app:cardCornerRadius="20sp"
+                app:strokeColor="@color/grayDark"
+                app:strokeWidth="2dp"
+                android:backgroundTint="@color/white">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="15dp"
+                    android:textAlignment="center">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:fontFamily="@font/pjs_bold"
+                        android:text="Quick Links"
+                        android:textColor="@color/DU_purple"
+                        android:textSize="22sp" />
+                    <Button
+                    android:id="@+id/alumni_website"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/pjs_bold"
+                    android:layout_marginBottom="5dp"
+                    android:backgroundTint="@color/DU_purple"
+                    android:text="Visit Website"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+                    <Button
+                        android:id="@+id/alumni_regis"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/pjs_bold"
+                        android:layout_marginBottom="5dp"
+                        android:backgroundTint="@color/DU_purple"
+                        android:text="Alumni Registration"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+                    <Button
+                        android:id="@+id/alumni_contribution"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/pjs_bold"
+                        android:layout_marginBottom="5dp"
+                        android:backgroundTint="@color/DU_purple"
+                        android:text="Contribute"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+                    <Button
+                        android:id="@+id/alumni_services"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/pjs_bold"
+                        android:layout_marginBottom="5dp"
+                        android:backgroundTint="@color/DU_purple"
+                        android:text="Alumni Services"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:fontFamily="@font/pjs_bold"
+                android:text="Contact Information"
+                android:textAlignment="center"
+                android:textColor="@color/DU_purple"
+                android:textSize="22sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:fontFamily="@font/pjs_semi_bold"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:text="Room No 111-112\n
+Sports Complex, GC Narang Road\n
+University of Delhi\n
+Email - : dean_alumni@du.ac.in\n"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

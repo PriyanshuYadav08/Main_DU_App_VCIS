@@ -39,77 +39,51 @@ class MainActivity : AppCompatActivity() {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         return when (item.itemId) {
             R.id.option1 -> {
-                Toast.makeText(this, "Student Dashboard clicked", Toast.LENGTH_SHORT).show()
                 val intent = Intent(this, StudentDashboardActivity::class.java)
                 startActivity(intent)
                 true
             }
-//            R.id.option2 -> {
-//                Toast.makeText(this, "Academic Calenders and Timetables clicked", Toast.LENGTH_SHORT).show()
-//                true
-//            }
-//            R.id.option3 -> {
-//                Toast.makeText(this, "Assignment and Exam Submissions clicked", Toast.LENGTH_SHORT).show()
-//                true
-//            }
-            R.id.option4 -> {
-                Toast.makeText(this, "University Announcements clicked", Toast.LENGTH_SHORT).show()
+            R.id.option2 -> {
                 val intent = Intent(this, UniversityAnnouncementsActivity::class.java)
                 startActivity(intent)
                 true
             }
-//            R.id.option5 -> {
-//                Toast.makeText(this, "Digital Certificates and ID Cards clicked", Toast.LENGTH_SHORT).show()
-//                true
-//            }
-            R.id.option6 -> {
-                Toast.makeText(this, "Result and Grade Tracker clicked", Toast.LENGTH_SHORT).show()
+            R.id.option3 -> {
                 val intent = Intent(this, ResultGradeActivity::class.java)
                 startActivity(intent)
                 true
             }
-            R.id.option7 -> {
-                Toast.makeText(this, "Feedback and Grievance Portal clicked", Toast.LENGTH_SHORT).show()
+            R.id.option4 -> {
                 val intent = Intent(this, FeedbackGrievanceActivity::class.java)
                 startActivity(intent)
                 true
             }
-            R.id.option8 -> {
-                Toast.makeText(this, "Career and Internship Portal clicked", Toast.LENGTH_SHORT).show()
+            R.id.option5 -> {
                 val intent = Intent(this, CareerInternshipActivity::class.java)
                 startActivity(intent)
                 true
             }
-            R.id.option9 -> {
-                Toast.makeText(this, "Event Registrations and Passes clicked", Toast.LENGTH_SHORT).show()
+            R.id.option6 -> {
                 val intent = Intent(this, EventPassesActivity::class.java)
                 startActivity(intent)
                 true
             }
-//            R.id.option10 -> {
-//                Toast.makeText(this, "Faculty Directory and Messaging clicked", Toast.LENGTH_SHORT).show()
-//                true
-//            }
-            R.id.option11 -> {
-                Toast.makeText(this, "Scholarship and Financial Aid Info clicked", Toast.LENGTH_SHORT).show()
+            R.id.option7 -> {
                 val intent = Intent(this, ScholarshipFinancialAidActivity::class.java)
                 startActivity(intent)
                 true
             }
-            R.id.option12 -> {
-                Toast.makeText(this, "International Cell and Exchange Info clicked", Toast.LENGTH_SHORT).show()
+            R.id.option8 -> {
                 val intent = Intent(this, InternationalCellActivity::class.java)
                 startActivity(intent)
                 true
             }
-            R.id.option13 -> {
-                Toast.makeText(this, "Alumni Network Access clicked", Toast.LENGTH_SHORT).show()
+            R.id.option9 -> {
                 val intent = Intent(this, AlumniNetworkActivity::class.java)
                 startActivity(intent)
                 true
             }
-            R.id.option14 -> {
-                Toast.makeText(this, "Contact Us clicked", Toast.LENGTH_SHORT).show()
+            R.id.option10 -> {
                 val intent = Intent(this, ContactUsActivity::class.java)
                 startActivity(intent)
                 true

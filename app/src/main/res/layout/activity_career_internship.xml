@@ -7,15 +7,272 @@
     android:layout_height="match_parent"
     tools:context=".CareerInternshipActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@color/DU_purple"
+        android:gravity="center_vertical"
         app:layout_constraintEnd_toEndOf="parent"
-        android:gravity="center"
-        android:textColor="@color/black"
-        android:text="This is the career and internship activity.\n \nThis comes after clicking the career and internship option in the header menu."/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:fontFamily="@font/pjs_bold"
+            android:text="University Of Delhi"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/watermark"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:alpha="0.35"
+        android:contentDescription="watermark"
+        android:scaleType="centerInside"
+        android:src="@drawable/watermark_du"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:fontFamily="@font/pjs_bold"
+                android:text="CENTRAL PLACEMENT CELL"
+                android:textAlignment="center"
+                android:textColor="@color/DU_purple"
+                android:textSize="22sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:fontFamily="@font/pjs_semi_bold"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:text="The main endeavor of CPC, University of Delhi is to get students placed in reputed multinationals, government organizations, NGOs, and the private sector. All students registered with CPC will be provided placement assistance, counseling for employment, and self/social entrepreneurship.\n \nThe CPC assures logistical support to the visiting companies at every stage of the placement process by making the university infrastructure available to them.\n \nThe CPC will liaise with corporate organizations to provide suitable jobs and internships for the candidates completing their studies from the University of Delhi. The CPC also conducts seminars and workshops to enable the students of the University of Delhi to become successful professionals."
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:elevation="10dp"
+                app:cardCornerRadius="20sp"
+                app:strokeColor="@color/grayDark"
+                app:strokeWidth="2dp"
+                android:backgroundTint="@color/white">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="15dp"
+                    android:textAlignment="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:fontFamily="@font/pjs_bold"
+                        android:text="Message from Vice Chancellor"
+                        android:textColor="@color/DU_purple"
+                        android:textSize="22sp" />
+
+                    <ImageView
+                        android:layout_width="220dp"
+                        android:layout_height="220dp"
+                        android:layout_marginBottom="10dp"
+                        android:src="@drawable/vc_img" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/pjs_semi_bold"
+                        android:gravity="center"
+                        android:text="The Central Placement Cell (CPC) serves as a vital bridge between the academic world and the dynamic demands of industry. It plays a crucial role in guiding students through one of the most important phases of their academic journey - stepping into the professional world.\n \nBy offering internships, facilitating skill development, supporting career decision-making, and enabling placement opportunities, CPC empowers students to transform their academic learning into meaningful careers.\n \nI extend my best wishes to all students and congratulate the CPC for its unwavering dedication in shaping future leaders and professionals."
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:layout_marginBottom="5dp"/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:elevation="10dp"
+                app:cardCornerRadius="20sp"
+                app:strokeColor="@color/grayDark"
+                app:strokeWidth="2dp"
+                android:backgroundTint="@color/white">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="15dp"
+                    android:textAlignment="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:fontFamily="@font/pjs_bold"
+                        android:gravity="center"
+                        android:text="Message from Dean Students' Welfare"
+                        android:textColor="@color/DU_purple"
+                        android:textSize="22sp" />
+
+                    <ImageView
+                        android:layout_width="220dp"
+                        android:layout_height="220dp"
+                        android:layout_marginBottom="10dp"
+                        android:src="@drawable/dsw_pic" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/pjs_semi_bold"
+                        android:gravity="center"
+                        android:text="The Central Placement Cell promotes employment for its students by facilitating internships, placements, and skill enhancement programmes. Its initiatives promote all-around development and prepare students to succeed in their careers.\n \nThe main endeavor of CPC is to help students get placed in reputed companies, multinationals, government, and non-government organizations, as well as the private sector."
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:layout_marginBottom="5dp"/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:fontFamily="@font/pjs_bold"
+                android:text="Past Recruiters"
+                android:textAlignment="center"
+                android:textColor="@color/DU_purple"
+                android:textSize="22sp" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/amazon_img"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/tcs_img"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/wipro_img"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/marriot_img"/>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:elevation="10dp"
+                app:cardCornerRadius="20sp"
+                app:strokeColor="@color/grayDark"
+                app:strokeWidth="2dp"
+                android:backgroundTint="@color/white">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="15dp"
+                    android:textAlignment="center">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:fontFamily="@font/pjs_bold"
+                        android:text="Quick Links"
+                        android:textColor="@color/DU_purple"
+                        android:textSize="22sp" />
+                    <Button
+                        android:id="@+id/about_cpc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/pjs_bold"
+                        android:layout_marginBottom="5dp"
+                        android:backgroundTint="@color/DU_purple"
+                        android:text="About CPC"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+                    <Button
+                        android:id="@+id/for_students_cpc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/pjs_bold"
+                        android:layout_marginBottom="5dp"
+                        android:backgroundTint="@color/DU_purple"
+                        android:text="For Students"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+                    <Button
+                        android:id="@+id/for_recruiters_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/pjs_bold"
+                        android:layout_marginBottom="5dp"
+                        android:backgroundTint="@color/DU_purple"
+                        android:text="For Recruiters"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+                    <Button
+                        android:id="@+id/events_cpc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/pjs_bold"
+                        android:layout_marginBottom="5dp"
+                        android:backgroundTint="@color/DU_purple"
+                        android:text="Events"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+                    <Button
+                        android:id="@+id/contact_cpc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/pjs_bold"
+                        android:backgroundTint="@color/DU_purple"
+                        android:text="Contact Us"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+    </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
