@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
+    android:background="@color/white"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".InternationalCellActivity">
@@ -71,12 +72,93 @@
                 android:fontFamily="@font/pjs_semi_bold"
                 android:paddingStart="15dp"
                 android:paddingEnd="15dp"
-                android:text="The University of Delhi offers integrated services to help  foreign students and partner universities from abroad to efficiently organize their programmes."
+                android:text="The University of Delhi offers integrated services to help  foreign students and partner universities from abroad to efficiently organize their programmes.\n\n"
                 android:textAlignment="center"
                 android:textColor="@color/black"
                 android:textSize="16sp" />
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:fontFamily="@font/pjs_bold"
+                android:text="Office of Dean International Relations"
+                android:textAlignment="center"
+                android:textColor="@color/DU_purple"
+                android:textSize="16sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:fontFamily="@font/pjs_semi_bold"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:text="Prof. Amarjiva Lochan, Joint Dean, International Relations\n \nE-mail : jointdean@ir.du.ac.in
+\nAddress : Room 12, First Floor, Conference Centre, University of Delhi, Delhi-110007
+\nEmail ID :            dean_ir@du.ac.in\n
+\nContact Office of Dean International Relations for :\n
+    → MoUs with universities abroad\n
+    → Erasmus+ program\n
+    → Universitas 21\n
+    → USEIF and other bilateral programmes\n
+    → ICCR and other Govt of India Programmes\n
+    → Student exchange\n
+    → Faculty programmes\n\n"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:fontFamily="@font/pjs_bold"
+                android:text="Office of Foreign Students' Registry"
+                android:textAlignment="center"
+                android:textColor="@color/DU_purple"
+                android:textSize="16sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:fontFamily="@font/pjs_semi_bold"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:text="Prof. Amarjiva Lochan, Foreign Students' Advisor\n
+\nAddress : Room 11, First Floor, Conference Centre, University of Delhi, Delhi-110007
+\nEmail :           fsr@du.ac.in\n
+\nContact Office of Foreign Students' Registry for :\n
+    → Admission of foreign students to undergraduate and postgraduate courses\n
+    → Hindi Language course\n
+    → English Language Proficiency course\n
+    → Language certification\n
+    → Equivalence issues\n
+    → Admission to part time courses in special circumstances only\n
+    → Cultural programmes including Antardhvani\n
+    → Orientation programmes\n"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/ir_web_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/DU_purple"
+                android:fontFamily="@font/pjs_bold"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:layout_marginBottom="15dp"
+                android:text="Visit the International Relations website"/>
+            <Button
+                android:id="@+id/fsr_web_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/DU_purple"
+                android:fontFamily="@font/pjs_bold"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:layout_marginBottom="15dp"
+                android:text="Visit the Foriegn Students' Registry website"/>
+
         </LinearLayout>
     </ScrollView>
-
 </androidx.constraintlayout.widget.ConstraintLayout>

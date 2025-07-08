@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
+    android:background="@color/white"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ContactUsActivity">
@@ -63,7 +64,68 @@
                 android:text="CONTACT US"
                 android:textAlignment="center"
                 android:textColor="@color/DU_purple"
-                android:textSize="22sp" />
+                android:textSize="22sp"
+                android:layout_marginBottom="15dp"/>
+            <Button
+                android:id="@+id/visit_du_colleges_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/DU_purple"
+                android:text="Visit all DU Colleges"
+                android:fontFamily="@font/pjs_bold"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:layout_marginBottom="15dp"/>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:elevation="10dp"
+                app:cardCornerRadius="20sp"
+                app:strokeColor="@color/grayDark"
+                app:strokeWidth="2dp"
+                android:backgroundTint="@color/white">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="15dp"
+                    android:textAlignment="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:fontFamily="@font/pjs_bold"
+                        android:text="Director South Campus"
+                        android:textColor="@color/DU_purple"
+                        android:textSize="22sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Professor Shri Prakash Singh"
+                        android:textColor="@color/DU_purple"
+                        android:fontFamily="@font/pjs_bold"
+                        android:textSize="22sp"
+                        android:layout_marginBottom="10dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/pjs_semi_bold"
+                        android:gravity="center"
+                        android:text="91-11-27662865, 91-11-24113045\ndir_udsc@du.ac.in"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:layout_marginBottom="5dp"/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
 
         </LinearLayout>
     </ScrollView>

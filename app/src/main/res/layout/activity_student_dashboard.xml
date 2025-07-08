@@ -118,6 +118,27 @@
                         android:text="Digital Certificates and ID Cards"
                         android:textColor="@color/white"
                         android:textSize="16sp"/>
+                    <Button
+                        android:id="@+id/result_grades_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/pjs_bold"
+                        android:layout_marginBottom="5dp"
+                        android:backgroundTint="@color/DU_purple"
+                        android:text="Results and Grades"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"/>
+
+                    <Button
+                        android:id="@+id/feedback_grievance_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/pjs_bold"
+                        android:layout_marginBottom="5dp"
+                        android:backgroundTint="@color/DU_purple"
+                        android:text="Feedback and Grievance Portal"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"/>
                 </LinearLayout>
             </com.google.android.material.card.MaterialCardView>
 

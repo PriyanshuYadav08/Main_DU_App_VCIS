@@ -7,17 +7,8 @@
         android:id="@+id/option2"
         android:title="University Announcements" />
     <item
-        android:id="@+id/option3"
-        android:title="Result and Grade Tracker" />
-    <item
-        android:id="@+id/option4"
-        android:title="Feedback and Grievance Portal"/>
-    <item
         android:id="@+id/option5"
         android:title="Career and Internship Portal"/>
-    <item
-        android:id="@+id/option6"
-        android:title="Event Registrations and Passes"/>
     <item
         android:id="@+id/option7"
         android:title="Scholarship and Financial Aid Info"/>

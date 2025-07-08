@@ -48,23 +48,8 @@ class MainActivity : AppCompatActivity() {
                 startActivity(intent)
                 true
             }
-            R.id.option3 -> {
-                val intent = Intent(this, ResultGradeActivity::class.java)
-                startActivity(intent)
-                true
-            }
-            R.id.option4 -> {
-                val intent = Intent(this, FeedbackGrievanceActivity::class.java)
-                startActivity(intent)
-                true
-            }
             R.id.option5 -> {
                 val intent = Intent(this, CareerInternshipActivity::class.java)
-                startActivity(intent)
-                true
-            }
-            R.id.option6 -> {
-                val intent = Intent(this, EventPassesActivity::class.java)
                 startActivity(intent)
                 true
             }
