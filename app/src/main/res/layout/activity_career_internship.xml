@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
+    android:background="@color/white"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".CareerInternshipActivity">
@@ -183,20 +184,23 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/amazon_img"/>
+                android:src="@drawable/amazon_img"
+                android:layout_marginBottom="5dp"/>
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/tcs_img"/>
+                android:src="@drawable/tcs_img"
+                android:layout_marginBottom="5dp"/>
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/wipro_img"/>
+                android:src="@drawable/wipro_img"
+                android:layout_marginBottom="5dp"/>
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/marriot_img"/>
-
+                android:src="@drawable/marriot_img"
+                android:layout_marginBottom="15dp"/>
             <com.google.android.material.card.MaterialCardView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
