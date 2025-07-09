@@ -77,6 +77,17 @@
                 android:textColor="@color/black"
                 android:textSize="16sp" />
 
+            <Button
+                android:id="@+id/register_now_cpc_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/DU_purple"
+                android:text="Register Now"
+                android:fontFamily="@font/pjs_bold"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:layout_marginBottom="15dp"/>
+
             <com.google.android.material.card.MaterialCardView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -201,6 +212,7 @@
                 android:layout_height="wrap_content"
                 android:src="@drawable/marriot_img"
                 android:layout_marginBottom="15dp"/>
+
             <com.google.android.material.card.MaterialCardView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
