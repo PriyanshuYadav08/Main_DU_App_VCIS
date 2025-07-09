@@ -4,9 +4,6 @@
         android:id="@+id/option1"
         android:title="Student Dashboard"/>
     <item
-        android:id="@+id/option2"
-        android:title="University Announcements" />
-    <item
         android:id="@+id/option5"
         android:title="Career and Internship Portal"/>
     <item

@@ -89,9 +89,19 @@
                 android:fontFamily="@font/pjs_semi_bold"
                 android:paddingStart="15dp"
                 android:paddingEnd="15dp"
-                android:text="Established in 1922, the University of Delhi (DU) is India's premier public central university renowned for academic excellence, diverse disciplines, and vibrant campus life. It comprises over 90 affiliated colleges, offering undergraduate, postgraduate, and doctoral programs in arts, science, commerce, law, and more. DU fosters innovation, research, and inclusivity, attracting students and faculty from across India and abroad. With a rich legacy and modern outlook, it remains a leading center for higher education."
+                android:text="Established in 1922, the University of Delhi (DU) is India's premier public central university renowned for academic excellence, diverse disciplines, and vibrant campus life.\n\nIt comprises over 90 affiliated colleges, offering undergraduate, postgraduate, and doctoral programs in arts, science, commerce, law, and more. DU fosters innovation, research, and inclusivity, attracting students and faculty from across India and abroad.\n\nWith a rich legacy and modern outlook, it remains a leading center for higher education."
                 android:textAlignment="center"
                 android:textColor="@color/black"
+                android:textSize="16sp" />
+            <Button
+                android:id="@+id/visit_website_main_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/pjs_bold"
+                android:layout_marginBottom="20dp"
+                android:backgroundTint="@color/DU_purple"
+                android:text="Visit UoD website for the latest updates"
+                android:textColor="@color/white"
                 android:textSize="16sp" />
 
 <!--VC MESSAGE SECTION-->
