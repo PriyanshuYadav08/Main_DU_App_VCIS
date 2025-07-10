@@ -7,9 +7,6 @@
         android:id="@+id/option5"
         android:title="Career and Internship Portal"/>
     <item
-        android:id="@+id/option7"
-        android:title="Scholarship and Financial Aid Info"/>
-    <item
         android:id="@+id/option8"
         android:title="International Cell and Exchange Info"/>
     <item

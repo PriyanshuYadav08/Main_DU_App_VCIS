@@ -1,9 +1,11 @@
 package com.example.mainduappvcis
 
 import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
+import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
@@ -29,6 +31,21 @@ class MainActivity : AppCompatActivity() {
                 break
             }
         }
+
+        val visitWebsiteBtn = findViewById<Button>(R.id.visit_website_main_btn)
+        visitWebsiteBtn.setOnClickListener {
+            openWebsite("https://www.du.ac.in/")
+        }
+    }
+
+    private fun openWebsite(url: String) {
+        val intent = Intent(Intent.ACTION_VIEW, Uri.parse(url))
+        intent.addCategory(Intent.CATEGORY_BROWSABLE)
+        if (intent.resolveActivity(packageManager) != null) {
+            startActivity(intent)
+        } else {
+            Toast.makeText(this, "No browser found to open this link", Toast.LENGTH_SHORT).show()
+        }
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
@@ -45,11 +62,6 @@ class MainActivity : AppCompatActivity() {
             }
             R.id.option5 -> {
                 val intent = Intent(this, CareerInternshipActivity::class.java)
-                startActivity(intent)
-                true
-            }
-            R.id.option7 -> {
-                val intent = Intent(this, ScholarshipFinancialAidActivity::class.java)
                 startActivity(intent)
                 true
             }

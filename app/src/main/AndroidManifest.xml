@@ -4,6 +4,17 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
 
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.VIEW" />
+            <data android:scheme="https" />
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW" />
+            <data android:scheme="http" />
+        </intent>
+    </queries>
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -24,22 +35,7 @@
             android:name=".InternationalCellActivity"
             android:exported="false" />
         <activity
-            android:name=".ScholarshipFinancialAidActivity"
-            android:exported="false" />
-        <activity
-            android:name=".EventPassesActivity"
-            android:exported="false" />
-        <activity
             android:name=".CareerInternshipActivity"
-            android:exported="false" />
-        <activity
-            android:name=".FeedbackGrievanceActivity"
-            android:exported="false" />
-        <activity
-            android:name=".ResultGradeActivity"
-            android:exported="false" />
-        <activity
-            android:name=".UniversityAnnouncementsActivity"
             android:exported="false" />
         <activity
             android:name=".StudentDashboardActivity"
