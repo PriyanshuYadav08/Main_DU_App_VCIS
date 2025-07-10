@@ -33,8 +33,33 @@ class MainActivity : AppCompatActivity() {
         }
 
         val visitWebsiteBtn = findViewById<Button>(R.id.visit_website_main_btn)
+        val fotDeptBtn = findViewById<Button>(R.id.fot_dept_btn)
+        val fmsDeptBtn = findViewById<Button>(R.id.fms_dept_btn)
+        val lawDeptBtn = findViewById<Button>(R.id.law_dept_btn)
+        val eduDeptBtn = findViewById<Button>(R.id.edu_dept_btn)
+        val fosDeptBtn = findViewById<Button>(R.id.fos_dept_btn)
+        val otherDeptBtn = findViewById<Button>(R.id.other_dept_btn)
+
         visitWebsiteBtn.setOnClickListener {
             openWebsite("https://www.du.ac.in/")
+        }
+        fotDeptBtn.setOnClickListener {
+            openWebsite("https://fot.du.ac.in/")
+        }
+        fmsDeptBtn.setOnClickListener {
+            openWebsite("https://fms.edu/")
+        }
+        lawDeptBtn.setOnClickListener {
+            openWebsite("https://lawfaculty.du.ac.in/")
+        }
+        eduDeptBtn.setOnClickListener {
+            openWebsite("https://cie.du.ac.in/")
+        }
+        fosDeptBtn.setOnClickListener {
+            openWebsite("https://www.du.ac.in/index.php?page=faculty-of-science")
+        }
+        otherDeptBtn.setOnClickListener {
+            openWebsite("https://www.du.ac.in/index.php?page=departments-at-du")
         }
     }
 
