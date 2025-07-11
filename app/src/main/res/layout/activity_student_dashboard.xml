@@ -115,7 +115,7 @@
                         android:fontFamily="@font/pjs_bold"
                         android:layout_marginBottom="5dp"
                         android:backgroundTint="@color/DU_purple"
-                        android:text="Digital Certificates and ID Cards"
+                        android:text="Digital Certificates"
                         android:textColor="@color/white"
                         android:textSize="16sp"/>
                     <Button
