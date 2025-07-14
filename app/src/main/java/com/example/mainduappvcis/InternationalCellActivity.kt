@@ -20,6 +20,7 @@ class InternationalCellActivity : AppCompatActivity() {
         val irWebBtn = findViewById<Button>(R.id.ir_web_btn)
         val fsrWebBtn = findViewById<Button>(R.id.fsr_web_btn)
 
+//link is not working
         irWebBtn.setOnClickListener {
             openWebsite("https://ir.du.ac.in/")
         }
@@ -29,12 +30,8 @@ class InternationalCellActivity : AppCompatActivity() {
     }
 
     private fun openWebsite(url: String) {
-        val intent = Intent(Intent.ACTION_VIEW, Uri.parse(url))
-        intent.addCategory(Intent.CATEGORY_BROWSABLE)
-        if (intent.resolveActivity(packageManager) != null) {
-            startActivity(intent)
-        } else {
-            Toast.makeText(this, "No browser found to open this link", Toast.LENGTH_SHORT).show()
-        }
+        val intent = Intent(this, WebActivity::class.java)
+        intent.putExtra("url", url)
+        startActivity(intent)
     }
 }

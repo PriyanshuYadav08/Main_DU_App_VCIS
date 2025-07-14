@@ -22,6 +22,7 @@ class AlumniNetworkActivity : AppCompatActivity() {
         val alumniContrib = findViewById<Button>(R.id.alumni_contribution)
         val alumniServices = findViewById<Button>(R.id.alumni_services)
 
+//link not working
         visitWebsite.setOnClickListener {
             openWebsite("https://alumni.du.ac.in/")
         }
@@ -31,18 +32,15 @@ class AlumniNetworkActivity : AppCompatActivity() {
         alumniContrib.setOnClickListener {
             openWebsite("https://app.uod.ac.in/alumnictr/index.php/settings/payment-user/create")
         }
+//link not working
         alumniServices.setOnClickListener {
             openWebsite("https://alumni.du.ac.in/?Alumni-Services")
         }
     }
 
     private fun openWebsite(url: String) {
-        val intent = Intent(Intent.ACTION_VIEW, Uri.parse(url))
-        intent.addCategory(Intent.CATEGORY_BROWSABLE)
-        if (intent.resolveActivity(packageManager) != null) {
-            startActivity(intent)
-        } else {
-            Toast.makeText(this, "No browser found to open this link", Toast.LENGTH_SHORT).show()
-        }
+        val intent = Intent(this, WebActivity::class.java)
+        intent.putExtra("url", url)
+        startActivity(intent)
     }
 }
