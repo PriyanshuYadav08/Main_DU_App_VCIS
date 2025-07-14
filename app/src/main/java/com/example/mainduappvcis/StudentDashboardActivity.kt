@@ -25,7 +25,7 @@ class StudentDashboardActivity : AppCompatActivity() {
         calenderTimetable.setOnClickListener {
             openWebsite("https://www.du.ac.in/index.php?page=academic-calendar")
         }
-//the link not opening
+//link not working
         assignmentExam.setOnClickListener {
             openWebsite("https://exam.du.ac.in/index.php")
         }
