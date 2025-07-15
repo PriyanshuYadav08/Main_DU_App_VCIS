@@ -160,7 +160,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Professor Shri Prakash Singh"
+                        android:text="Professor Rajni Abbi"
                         android:textColor="@color/DU_purple"
                         android:fontFamily="@font/pjs_bold"
                         android:textSize="22sp"
